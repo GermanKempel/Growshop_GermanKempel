@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* header */
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Main */
+
+.main {
+  background-color: #4da167;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 200px 1fr;
+  grid-template-areas:
+    "titulo"
+    "carousel"
+    "main";
+}
+.carousel-inner {
+  background-size: cover;
+  background-position: center center;
+}
+
+.titulo {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card {
+  height: 50vh;
+  background-color: #98ca9e;
+  padding-bottom: 10px;
+
+}
+.card img {
+  height: 70%;
+}
+
+.card {
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Index */
+
+
+
+/* Tienda */
+
+.main_tienda {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "aside productos";
+  grid-area: main;
+  justify-items: center;
+  align-items: center;
+}
+.aside_tienda {
+  grid-area: aside;
+  font-size: large;
+  font-weight: bold;
+}
+
+.aside_dropdown{
+  display: none;
+}
+
+/* Novedades */
+
+.noticia {
+  background-color: #3bc14a;
+}
+
+.main_novedades {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw 25vw;
+  grid-template-rows: 280px 30vh;
+  grid-template-areas:
+    "noticia noticia noticia noticia"
+    "articulo1 articulo2 articulo3 articulo4";
+  justify-items: center;
+  align-items: center;
+}
+.noticia {
+  overflow: scroll;
+  grid-area: noticia;
+  background-color: antiquewhite;
+  margin: 10px;
+  height: 250px;
+}
+.main_novedades img {
+  margin: 5px;
+  padding: 5px;
+  width: 25vw;
+  height: 30vh;
+}
+.articulo1 {
+  grid-area: articulo1;
+}
+.articulo2 {
+  grid-area: articulo2;
+}
+.articulo3 {
+  grid-area: articulo3;
+}
+.articulo4 {
+  grid-area: articulo4;
+}
+
+/* Nosotros */
+
+.nosotrosTexto {
+  overflow: scroll;
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 500px;
+  margin: 5px;
+}
+
+/* Contacto */
+
+.main form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer */
+
+.footer {
+  background-image: linear-gradient(to top, #3bc14a, #4da167);
+  display: flex;
+  flex-direction: column;
+}
+.redes {
+  padding: 10px;
+}
+.footer img {
+  width: 50px;
+  height: 50px;
+}
+.whatsapp {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+}
+.copyright {
+  text-align: center;
+}
+
+/* @media Tablets */
+
+@media (max-width: 768px) {
+  .main {
+    grid-template-rows: 50px 175px 1fr;
+  }
+
+  /* @media Index Tablets */
+
+  .secciones {
+    grid-template-columns: 50vw 50vw;
+  }
+
+  /* @media Tablets Tienda  */
+
+  .main_tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows:  15vh 85%;
+    grid-template-areas:
+      "aside_dropdown"
+      "productos"
+  }
+.aside{
+  display: none;
+}
+
+.aside_dropdown{
+  display: contents;
+}
+
+  /* @media Tablets Novedades */
+
+  .main_novedades {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 280px 30vh 30vh;
+    grid-template-areas:
+      "noticia noticia"
+      "articulo1 articulo2"
+      "articulo3 articulo4";
+    justify-items: center;
+    align-items: center;
+  }
+  .main_novedades img {
+    object-fit: cover;
+    width: 50vw;
+  }
+
+  /* @media Nosotros Tablets */
+
+  .nosotrosTexto {
+    height: 300px;
+  }
+}
+
+/* @media Smartphones */
+
+@media (max-width: 576px) {
+
+  /* @media Smartphones Tienda  */
+  
+  .main_tienda {
+    grid-template-columns: 1fr;
+    grid-template-rows:  15vh 92%;
+    grid-template-areas:
+      "aside_dropdown"
+      "productos"
+  }
+
+  /* @media Smartphones Novedades */
+
+  .main_novedades {
+    grid-template-columns: 100vw;
+    grid-template-rows: 200px 20vh 20vh 20vh 20vh;
+    grid-template-areas:
+      "noticia"
+      "articulo1"
+      "articulo2"
+      "articulo3"
+      "articulo4";
+  }
+  .noticia {
+    overflow: scroll;
+    grid-area: noticia;
+    background-color: antiquewhite;
+    margin: 10px;
+    height: 180px;
+  }
+  .main_novedades img {
+    margin: 5px;
+    padding: 5px;
+    width: 100vw;
+    height: 20vh;
+  }
+}
