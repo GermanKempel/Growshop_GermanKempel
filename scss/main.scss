@@ -31,24 +31,20 @@ img {
   .card {
     height: 50vh;
     background-color: #98ca9e;
-    padding-bottom: 10px;
+    padding: 20px;
     transition: transform 0.2s ease;
-    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18); &:hover {
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18); 
+    &:hover {
     transform: scale(1.1);
   }
   img {
     height: 70%;
   }
 }
-
 }
   
- 
-  
   /* Index */
-  
-  
-  
+
   /* Tienda */
   
   .main_tienda {
@@ -172,7 +168,7 @@ img {
   
     .main_tienda {
       grid-template-columns: 1fr;
-      grid-template-rows:  15vh 85%;
+      grid-template-rows:  1fr 1fr;
       grid-template-areas:
         "aside_dropdown"
         "productos"
@@ -218,11 +214,11 @@ img {
     
     .main_tienda {
       grid-template-columns: 1fr;
-      grid-template-rows:  15vh 92%;
+      grid-template-rows:  1fr;
       grid-template-areas:
         "aside_dropdown"
         "productos"
-    }
+      }
   
     /* @media Smartphones Novedades */
   
