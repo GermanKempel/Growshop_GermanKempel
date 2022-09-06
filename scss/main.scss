@@ -25,9 +25,10 @@ img {
     text-align: center;
     margin: 0 auto;
   } 
-    .carousel{
-  height: 25vh;
-}
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
   .card {
     height: 50vh;
     background-color: #98ca9e;

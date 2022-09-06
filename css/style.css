@@ -18,8 +18,9 @@
   text-align: center;
   margin: 0 auto; }
 
-.main .carousel {
-  height: 25vh; }
+.main .carousel-item img {
+  height: 200px;
+  object-fit: cover; }
 
 .main .card {
   height: 50vh;
