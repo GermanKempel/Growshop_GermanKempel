@@ -64,20 +64,25 @@
     </header>
 
     <main class="main">
-        <div>
-            <h1 class="titulo">NOVEDADES</h1>
+        <div class="titulo d-flex justify-content-center">
+            <h1>NOVEDADES</h1>
         </div>
-
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide m-0 " data-bs-ride="carousel">
             <div class="carousel-inner h-100 ">
                 <div class="carousel-item active">
-                    <img src="../img/cogollos_1.jpg" class="d-block w-100" alt="...">
+                    <img src="../img/Carousel-cogollos.jpg" class="d-block w-100" alt="cogollos_c">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/tienda.jpg" class="d-block  w-100" alt="...">
+                    <img src="../img/Carousel-tienda.jpg" class="d-block  w-100" alt="tienda_c">
                 </div>
                 <div class="carousel-item">
-                    <img src="../img/nosotros.jpg" class="d-block  w-100" alt="...">
+                    <img src="../img/Carousel-fumando.jpg" class="d-block  w-100" alt="fumando_c">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/Carousel-nosotros.jpg" class="d-block  w-100" alt="nosotros_c">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/Carousel-contacto.jpg" class="d-block  w-100" alt="contacto_c">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -91,8 +96,8 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <div class="main_novedades m-0">
-            <article class="noticia">
+        <div class="main_novedades container-fluid m-0">
+            <article class="noticia row m-1">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quam facere officiis voluptatem
                     incidunt perferendis nemo quibusdam. Maiores sapiente pariatur animi repudiandae accusantium natus
                     iure facilis sit quas. Nesciunt porro nam vel sint quasi libero et nihil id atque dignissimos quod
@@ -111,11 +116,15 @@
                     animi minus molestiae dolorem voluptate enim soluta, pariatur obcaecati dignissimos, fugit ut
                     sapiente.</p>
             </article>
-            <div class="articulos container row row-cols-1 row-cols-sm-2 row-cols-md-4 ">
-                <div class="articulo1"><img src="../img/canabis_medicinal.jpg" alt="medicinal"> </div>
-                <div class="articulo2"><img src="../img/dia_mundial.jpg" alt="dia_mundial"></div>
-                <div class="articulo3"><img src="../img/legalizacion.jpg" alt="legalizacion"></div>
-                <div class="articulo4"><img src="../img/marihuana_neurociencias.jpg" alt="neurociencias"></div>
+            <div class="row m-1">
+                <div class="col d-flex justify-content-center p-1 articulo1"><img src="../img/canabis_medicinal.jpg"
+                        alt="medicinal"> </div>
+                <div class="col d-flex justify-content-center p-1 articulo2"><img src="../img/dia_mundial.jpg"
+                        alt="dia_mundial"></div>
+                <div class="col d-flex justify-content-center p-1 articulo3"><img src="../img/legalizacion.jpg"
+                        alt="legalizacion"></div>
+                <div class="col d-flex justify-content-center p-1 articulo4"><img
+                        src="../img/marihuana_neurociencias.jpg" alt="neurociencias"></div>
             </div>
         </div>
     </main>
@@ -135,6 +144,7 @@
             <p class="copyright">© Todos los derechos reservados a GKGrowshop</p>
         </section>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
