@@ -1,16 +1,24 @@
 %estiloHeader{
     background-image: linear-gradient(to top, $verde1, $verde2);
+    margin: 0;
 }
 %estiloMain{
     background-color: $verde1;
+    margin: 0;
 }
 %estiloFooter{
     background-image: linear-gradient(to top, $verde2, $verde1);
+    margin: 0;
 }
 @mixin estiloTexto ($size, $color){
     font-size: $size;
     font-family: $typoTitulo;
-    font-weight: 900;
+    font-style: italic;
+    color: $color
+}
+@mixin estiloTexto2 ($size, $color){
+    font-size: $size;
+    font-family: $typoTexto;
     font-style: italic;
     color: $color
 }

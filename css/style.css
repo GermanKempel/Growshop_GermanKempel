@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 .header {
-  background-image: linear-gradient(to top, #4da167, #3bc14a); }
+  background-image: linear-gradient(to top, #4da167, #3bc14a);
+  margin: 0; }
 
 .main {
-  background-color: #4da167; }
+  background-color: #4da167;
+  margin: 0; }
 
 .footer {
-  background-image: linear-gradient(to top, #3bc14a, #4da167); }
+  background-image: linear-gradient(to top, #3bc14a, #4da167);
+  margin: 0; }
 
-/* header */
 .header img {
   width: 50px;
   height: 50px;
@@ -23,45 +26,27 @@
   display: block;
   margin-top: 0; }
 
-/* Main */
-.main {
-  /* Index */ }
-  .main .titulo {
-    font-size: 30px;
-    font-family: "Permanent Marker", cursive;
-    font-weight: 900;
-    font-style: italic;
-    color: #3bc14a; }
-  .main .carousel-item img {
-    height: 200px;
-    object-fit: cover; }
-  .main .card {
-    height: 35vh;
-    background-color: #98ca9e;
-    padding-bottom: 10px;
-    transition: transform 0.2s ease;
-    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18); }
-    .main .card:hover {
-      transform: scale(1.1); }
-    .main .card img {
-      height: 70%; }
+.main .titulo {
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  font-style: italic;
+  color: #3bc14a; }
 
-/* Tienda */
-.main_tienda {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "aside productos";
-  grid-area: main;
-  justify-items: center;
-  align-items: center; }
-  .main_tienda .aside_tienda {
-    grid-area: aside;
-    font-size: large;
-    font-weight: bold; }
-  .main_tienda .aside_dropdown {
-    display: none; }
+.main .carousel-item img {
+  height: 200px;
+  object-fit: cover; }
 
-/* Novedades */
+.main .card {
+  height: 35vh;
+  background-color: #98ca9e;
+  padding-bottom: 10px;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18); }
+  .main .card:hover {
+    transform: scale(1.1); }
+  .main .card img {
+    height: 70%; }
+
 .main_novedades img {
   width: 20vw;
   height: 200px; }
@@ -72,22 +57,21 @@
   margin: 10px;
   height: 250px; }
 
-/* Nosotros */
-.nosotrosTexto {
+.main .nosotrosTexto {
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  color: black;
   overflow: scroll;
-  background-color: antiquewhite;
-  width: 100vw;
-  height: 500px;
-  margin: 5px; }
+  background-color: #dafad7;
+  height: 500px; }
 
-/* Contacto */
 .main form {
   margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-/* footer */
 .footer {
   display: flex;
   flex-direction: column; }
@@ -102,40 +86,3 @@
     bottom: 5%; }
   .footer .copyright {
     text-align: center; }
-
-/* @media Tablets */
-@media (max-width: 768px) {
-  /* @media Index Tablets */
-  .secciones {
-    grid-template-columns: 50vw 50vw; }
-  /* @media Tablets Tienda  */
-  .main_tienda {
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 85%;
-    grid-template-areas: "aside_dropdown" "productos"; }
-    .main_tienda .card {
-      width: 40vw; }
-    .main_tienda .aside {
-      display: none; }
-    .main_tienda .aside_dropdown {
-      display: contents; }
-  /* @media Tablets Novedades */
-  .main_novedades img {
-    width: 40vw; }
-  /* @media Nosotros Tablets */
-  .nosotrosTexto {
-    height: 300px; } }
-
-/* @media Smartphones */
-@media (max-width: 576px) {
-  /* @media Smartphones Tienda  */
-  .main_tienda {
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 92%;
-    grid-template-areas: "aside_dropdown" "productos"; }
-    .main_tienda .card {
-      width: 80vw;
-      height: 30vh; }
-  /* @media Smartphones Novedades */
-  .main_novedades img {
-    width: 80vw; } }

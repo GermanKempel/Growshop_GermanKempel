@@ -15,7 +15,7 @@
 <body>
 
     <header class="header row">
-        <nav class="navbar navbar-expand-md bg-success  ">
+        <nav class="navbar navbar-expand-md">
             <div class="container-fluid ">
                 <a class="logo ml-3"><img src="../img/logo.jpg" alt="logo"></a>
                 <button class="navbar-toggler border-light bg-light" type="button" data-bs-toggle="collapse"
@@ -96,8 +96,8 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <section class="main_tienda">
-            <div class="aside aside_tienda">
+        <section class="main_tienda d-md-flex align-items-center">
+            <div class="aside aside_tienda col-3 mt-3 d-none d-md-block">
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         Parafernalia
@@ -133,8 +133,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="dropdown aside_dropdown">
-                <button class="btn btn-light text-light dropdown-toggle bg-success " type="button"
+            <div class="dropdown aside_dropdown row d-md-none">
+                <button class="btn btn-light text-light dropdown-toggle bg-success mt-3" type="button"
                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     Secciones
                 </button>
@@ -149,9 +149,9 @@
                     <li><a class="dropdown-item" href="#">Indumentaria</a></li>
                 </ul>
             </div>
-            <div class="productos row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 m-1">
-                <div class="col">
-                    <div class="card">
+            <div class="productos col-9-md row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 m-1">
+                <div class="col d-flex justify-content-center">
+                    <div class="card w-100">
                         <img src="../img/semillas.jpg" class="card-img-top" alt="semillas">
                         <div class="card-body">
                             <h5 class="card-title">Producto 1</h5>
@@ -159,8 +159,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                <div class="col d-flex justify-content-center">
+                    <div class="card w-100">
                         <img src="../img/combos.jpg" class="card-img-top" alt="combos">
                         <div class="card-body">
                             <h5 class="card-title">Producto 2</h5>
@@ -168,8 +168,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
+                <div class="col d-flex justify-content-center">
+                    <div class="card w-100">
                         <img src="../img/fertilizantes.jpg" class="card-img-top" alt="fertilizantes">
                         <div class="card-body">
                         <h5 class="card-title">Producto 3</h5>
@@ -177,8 +177,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
+            <div class="col d-flex justify-content-center">
+                <div class="card w-100">
                     <img src="../img/iluminacion.jpg" class="card-img-top" alt="iluminacion">
                     <div class="card-body">
                         <h5 class="card-title">Producto 4</h5>
@@ -186,8 +186,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
+            <div class="col d-flex justify-content-center">
+                <div class="card w-100">
                     <img src="../img/papelillos.jpg" class="card-img-top" alt="papelillos">
                     <div class="card-body">
                         <h5 class="card-title">Producto 5</h5>
@@ -195,8 +195,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card">
+            <div class="col d-flex justify-content-center">
+                <div class="card w-100">
                     <img src="../img/parafernalia.jpg" class="card-img-top" alt="parafernalia">
                     <div class="card-body">
                         <h5 class="card-title">Producto 6</h5>

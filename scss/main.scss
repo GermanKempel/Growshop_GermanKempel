@@ -9,7 +9,7 @@
 @import "./variables/extend";
 
 
-/* header */
+// Header
 
 .header {
   @extend %estiloHeader;
@@ -24,12 +24,12 @@
   margin-top: 0;
 }
 
-/* Main */
+// Main
 
 .main {
   @extend %estiloMain;
   .titulo {
-    @include estiloTexto(30px, $verde2)
+    @include estiloTexto(40px, $verde2)
   }
   .carousel-item {
     img {
@@ -38,7 +38,7 @@
     }
   }
 
-  /* Index */
+  // Index
 
   .card {
     height: 35vh;
@@ -55,26 +55,7 @@
   }
 }
 
-/* Tienda */
-
-.main_tienda {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: "aside productos";
-  grid-area: main;
-  justify-items: center;
-  align-items: center;
-  .aside_tienda {
-    grid-area: aside;
-    font-size: large;
-    font-weight: bold;
-  }
-  .aside_dropdown {
-    display: none;
-  }
-}
-
-/* Novedades */
+// Novedades
 
 .main_novedades {
   img {
@@ -83,23 +64,25 @@
   }
   .noticia {
     overflow: scroll;
-    background-color: rgb(218, 250, 215);
+    background-color: $verde3;
     margin: 10px;
     height: 250px;
   }
 }
 
-/* Nosotros */
+// Nosotros
 
-.nosotrosTexto {
+.main{
+  .nosotrosTexto {
+    @include estiloTexto2 (20px, black);
   overflow: scroll;
-  background-color: antiquewhite;
-  width: 100vw;
+  background-color: $verde3;
   height: 500px;
-  margin: 5px;
+}
 }
 
-/* Contacto */
+
+// Contacto
 
 .main {
   form {
@@ -110,7 +93,7 @@
   }
 }
 
-/* footer */
+// Footer
 
 .footer {
   @extend %estiloFooter;
@@ -132,73 +115,5 @@
   }
   .copyright {
     text-align: center;
-  }
-}
-/* @media Tablets */
-
-@media (max-width: 768px) {
-  /* @media Index Tablets */
-
-  .secciones {
-    grid-template-columns: 50vw 50vw;
-  }
-
-  /* @media Tablets Tienda  */
-
-  .main_tienda {
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 85%;
-    grid-template-areas:
-      "aside_dropdown"
-      "productos";
-    .card {
-      width: 40vw;
-    }
-    .aside {
-      display: none;
-    }
-    .aside_dropdown {
-      display: contents;
-    }
-  }
-
-  /* @media Tablets Novedades */
-
-  .main_novedades {
-    img {
-      width: 40vw;
-    }
-  }
-
-  /* @media Nosotros Tablets */
-
-  .nosotrosTexto {
-    height: 300px;
-  }
-}
-
-/* @media Smartphones */
-
-@media (max-width: 576px) {
-  /* @media Smartphones Tienda  */
-
-  .main_tienda {
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 92%;
-    grid-template-areas:
-      "aside_dropdown"
-      "productos";
-    .card {
-      width: 80vw;
-      height: 30vh;
-    }
-  }
-
-  /* @media Smartphones Novedades */
-
-  .main_novedades {
-    img {
-      width: 80vw;
-    }
   }
 }
