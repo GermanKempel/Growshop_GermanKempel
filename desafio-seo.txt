@@ -1,3 +1,20 @@
 Keywords:
-- index: growshop, marihuana, ganja, cannabis, marijuana, mota, porro, chala
+- index: GKGrowshop, growshop, marihuana, ganja, cannabis, marijuana, mota, porro, chala
+- tienda: GKGrowshop, growshop, marihuana, cannabis, tienda, shop, comprar
+- novedades: GKGrowshop, growshop, marihuana, cannabis, novedades, news, noticias
+- nosotros: GKGrowshop, growshop, marihuana, cannabis, nosotros, team, us
+- contacto: GKGrowshop, growshop, marihuana, cannabis, contacto, formulario
 
+Descriptions:
+- index: GKGrowshop es la nueva tienda online del cannabis
+- tienda: GKGrowshop compra en la nueva tienda online del cannabis
+- novedades: GKGrowshop las novedades en la nueva tienda online del cannabis
+- nosotros: GKGrowshop quienes hacemos la nueva tienda online del cannabis
+- contacto: GKGrowshop contactate con la nueva tienda online del cannabis
+
+Titles:
+- index: GKGrowshop | Inicio
+- tienda: GKGrowshop | Tienda
+- novedades: GKGrowshop | Novedades
+- nosotros: GKGrowshop | Nosotros
+- contacto: GKGrowshop | Contacto
