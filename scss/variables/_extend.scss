@@ -1,13 +1,13 @@
 %estiloHeader{
-    background-image: linear-gradient(to top, $verde1, $verde2);
+    background-image: linear-gradient(to top, $YellowGreenColorWheel, $ElectricLime);
     margin: 0;
 }
 %estiloMain{
-    background-color: $verde1;
+    background-color: $YellowGreenColorWheel;
     margin: 0;
 }
 %estiloFooter{
-    background-image: linear-gradient(to top, $verde2, $verde1);
+    background-image: linear-gradient(to top, $ElectricLime, $YellowGreenColorWheel);
     margin: 0;
 }
 @mixin estiloTexto ($size, $color){
