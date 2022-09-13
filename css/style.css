@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("//db.onlinewebfonts.com/c/e6df74ee849324b767106af1edd778b7?family=Marijuana");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
 * {
   margin: 0;
@@ -27,14 +27,21 @@
   margin-top: 0; }
 
 .main .titulo {
-  font-size: 40px;
-  font-family: "Permanent Marker", cursive;
-  font-style: italic;
-  color: #9ef01a; }
+  font-size: 60px;
+  font-family: "Marijuana", regular;
+  font-style: regular;
+  color: #ccff33;
+  margin-bottom: -2rem; }
 
 .main_novedades img {
   width: 20vw;
   height: 200px; }
+  @media screen and (max-width: 768px) {
+    .main_novedades img {
+      width: 40vw; } }
+  @media screen and (max-width: 576px) {
+    .main_novedades img {
+      width: 80vw; } }
 
 .main_novedades .noticia {
   overflow: scroll;
@@ -47,9 +54,8 @@
   font-family: "Work Sans", sans-serif;
   font-style: italic;
   color: black;
-  overflow: scroll;
   background-color: #dafad7;
-  height: 500px; }
+  height: fit-content; }
 
 .contactForm {
   margin: 20px;
@@ -78,23 +84,37 @@
 
 .card {
   height: 300px;
-  width: 18vw;
+  width: 20vw;
   background-color: #70e000;
   transition: transform 0.2s ease;
   box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
   line-height: 18px;
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 40vw; } }
+  @media screen and (max-width: 576px) {
+    .card {
+      width: 80vw; } }
   .card .card-body {
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 5px; }
   .card:hover {
     transform: scale(1.1); }
   .card img {
-    height: 70%; }
+    height: 200px;
+    object-fit: cover; }
 
 .navbar {
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  color: #9ef01a; }
   .navbar .logo {
     padding-left: 50px; }
   .navbar form {
     padding-right: 50px; }
+  .navbar .navbar-toggler {
+    margin-right: 50px; }

@@ -13,7 +13,7 @@
 @mixin estiloTexto ($size, $color){
     font-size: $size;
     font-family: $typoTitulo;
-    font-style: italic;
+    font-style: regular;
     color: $color
 }
 @mixin estiloTexto2 ($size, $color){

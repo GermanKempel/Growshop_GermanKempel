@@ -1,7 +1,8 @@
 .main {
     @extend %estiloMain;
     .titulo {
-      @include estiloTexto(40px, $GreenLizard)
+      @include estiloTexto(60px, $ElectricLime);
+      margin-bottom: -2rem;
     }
   }
   
@@ -11,6 +12,12 @@
     img {
       width: 20vw;
       height: 200px;
+      @media screen and (max-width: 768px) {
+        width: 40vw;      
+      }
+      @media screen and (max-width: 576px) {
+        width: 80vw;      
+      }
     }
     .noticia {
       overflow: scroll;
@@ -24,9 +31,8 @@
   
     .nosotrosTexto {
       @include estiloTexto2 (20px, black);
-    overflow: scroll;
     background-color: $verde3;
-    height: 500px;
+    height: fit-content;
   }
   
   // Contacto
