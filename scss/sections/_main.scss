@@ -2,7 +2,6 @@
     @extend %estiloMain;
     .titulo {
       @include estiloTexto(60px, $ElectricLime);
-      margin-bottom: -2rem;
     }
   }
   

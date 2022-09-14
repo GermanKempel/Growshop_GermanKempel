@@ -1,4 +1,4 @@
-@import url("//db.onlinewebfonts.com/c/e6df74ee849324b767106af1edd778b7?family=Marijuana");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap");
 * {
   margin: 0;
@@ -6,15 +6,15 @@
   box-sizing: border-box; }
 
 .header {
-  background-image: linear-gradient(to top, #38b000, #ccff33);
+  background-image: linear-gradient(to top, #008000, #ccff33);
   margin: 0; }
 
 .main {
-  background-color: #38b000;
+  background-color: #008000;
   margin: 0; }
 
 .footer {
-  background-image: linear-gradient(to top, #ccff33, #38b000);
+  background-image: linear-gradient(to top, #ccff33, #008000);
   margin: 0; }
 
 .header img {
@@ -28,10 +28,9 @@
 
 .main .titulo {
   font-size: 60px;
-  font-family: "Marijuana", regular;
+  font-family: "Rampart One", cursive;
   font-style: regular;
-  color: #ccff33;
-  margin-bottom: -2rem; }
+  color: #ccff33; }
 
 .main_novedades img {
   width: 20vw;
