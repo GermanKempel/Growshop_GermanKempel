@@ -5,6 +5,12 @@
     }
   }
   
+// Tienda
+
+.aside_tienda{
+  margin-left: 20px;
+}
+
   // Novedades
   
   .main_novedades {
@@ -29,10 +35,28 @@
   // Nosotros
   
     .nosotrosTexto {
-      @include estiloTexto2 (20px, black);
-    background-color: $verde3;
+      @include estiloTexto2 (20px, white);
     height: fit-content;
+    margin: 20px;
+    position: relative;
+    p{
+    position: relative;
   }
+    }
+    .nosotrosTexto::before{
+    content: "";
+    background-image: url('../img/nosotros.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+  }
+  
+  
   
   // Contacto
   

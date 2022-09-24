@@ -18,8 +18,8 @@
   margin: 0; }
 
 .header img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   object-fit: cover; }
 
 .dropdown:hover .dropdown-menu {
@@ -31,6 +31,9 @@
   font-family: "Rampart One", cursive;
   font-style: regular;
   color: #ccff33; }
+
+.aside_tienda {
+  margin-left: 20px; }
 
 .main_novedades img {
   width: 20vw;
@@ -52,9 +55,24 @@
   font-size: 20px;
   font-family: "Work Sans", sans-serif;
   font-style: italic;
-  color: black;
-  background-color: #dafad7;
-  height: fit-content; }
+  color: white;
+  height: fit-content;
+  margin: 20px;
+  position: relative; }
+  .nosotrosTexto p {
+    position: relative; }
+
+.nosotrosTexto::before {
+  content: "";
+  background-image: url("../img/nosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5; }
 
 .contactForm {
   margin: 20px;
@@ -66,13 +84,13 @@
   display: flex;
   flex-direction: column; }
   .footer .redes {
-    padding: 10px; }
+    padding: 40px 0px 20px 40px; }
   .footer img {
     width: 50px;
     height: 50px; }
   .footer .whatsapp img {
     position: fixed;
-    right: 5%;
+    right: 10%;
     bottom: 5%; }
   .footer .copyright {
     text-align: center; }
@@ -83,12 +101,14 @@
 
 .card {
   height: 300px;
-  width: 20vw;
+  width: 18vw;
   background-color: #70e000;
   transition: transform 0.2s ease;
   box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
   line-height: 18px;
-  text-align: center; }
+  text-align: center;
+  border-color: #ccff33;
+  border-width: 2px; }
   @media screen and (max-width: 768px) {
     .card {
       width: 40vw; } }

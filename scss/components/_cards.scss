@@ -1,11 +1,13 @@
 .card {
     height: 300px;
-    width: 20vw;
+    width: 18vw;
     background-color: $SheenGreen;
     transition: transform 0.2s ease;
     box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
     line-height: 18px;
     text-align: center;
+    border-color: $ElectricLime;
+    border-width: 2px;
     @media screen and (max-width: 768px) {
       width: 40vw;      
     }
