@@ -18,8 +18,8 @@
   margin: 0; }
 
 .header img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover; }
 
 .dropdown:hover .dropdown-menu {
@@ -48,8 +48,9 @@
 .main_novedades .noticia {
   overflow: scroll;
   background-color: #dafad7;
-  margin: 10px;
-  height: 250px; }
+  margin: 10px auto 10px;
+  height: 250px;
+  width: 93vw; }
 
 .nosotrosTexto {
   font-size: 20px;
@@ -96,8 +97,14 @@
     text-align: center; }
 
 .carousel-item img {
-  height: 200px;
+  height: 300px;
   object-fit: cover; }
+  @media screen and (max-width: 768px) {
+    .carousel-item img {
+      height: 250px; } }
+  @media screen and (max-width: 576px) {
+    .carousel-item img {
+      height: 200px; } }
 
 .card {
   height: 300px;
