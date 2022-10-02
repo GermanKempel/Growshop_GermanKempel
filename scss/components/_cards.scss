@@ -14,15 +14,14 @@
     @media screen and (max-width: 576px) {
       width: 80vw;      
     }
-    .card-body{
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
     &:hover {
       transform: scale(1.1);
     }
     img {
-      height: 200px;
-      object-fit: cover;
+      height: 70%;
+      object-fit: fill;
+    }
+    .card-body{
+      height: 30%;
     }
   }

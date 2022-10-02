@@ -31,6 +31,18 @@
   font-family: "Rampart One", cursive;
   font-style: regular;
   color: #ccff33; }
+  @media screen and (max-width: 768px) {
+    .main .titulo {
+      font-size: 50px;
+      font-family: "Rampart One", cursive;
+      font-style: regular;
+      color: #ccff33; } }
+  @media screen and (max-width: 576px) {
+    .main .titulo {
+      font-size: 35px;
+      font-family: "Rampart One", cursive;
+      font-style: regular;
+      color: #ccff33; } }
 
 .aside_tienda {
   margin-left: 20px; }
@@ -44,13 +56,32 @@
   @media screen and (max-width: 576px) {
     .main_novedades img {
       width: 80vw; } }
+  .main_novedades img:hover {
+    transform: scale(1.1);
+    transition: 0.3s; }
 
 .main_novedades .noticia {
-  overflow: scroll;
-  background-color: #dafad7;
-  margin: 10px auto 10px;
-  height: 250px;
-  width: 93vw; }
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  font-style: italic;
+  color: white;
+  height: fit-content;
+  margin: 20px;
+  position: relative; }
+  .main_novedades .noticia p {
+    position: relative; }
+
+.main_novedades .noticia::before {
+  content: "";
+  background-image: url("../img/novedades.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3; }
 
 .nosotrosTexto {
   font-size: 20px;
@@ -122,14 +153,13 @@
   @media screen and (max-width: 576px) {
     .card {
       width: 80vw; } }
-  .card .card-body {
-    margin-top: 10px;
-    margin-bottom: 5px; }
   .card:hover {
     transform: scale(1.1); }
   .card img {
-    height: 200px;
-    object-fit: cover; }
+    height: 70%;
+    object-fit: fill; }
+  .card .card-body {
+    height: 30%; }
 
 .navbar {
   padding-top: 20px;

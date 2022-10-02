@@ -1,52 +1,51 @@
 .main {
-    @extend %estiloMain;
-    .titulo {
-      @include estiloTexto(60px, $ElectricLime);
+  @extend %estiloMain;
+  .titulo {
+    @include estiloTexto(60px, $ElectricLime);
+    @media screen and (max-width: 768px) {
+      @include estiloTexto(50px, $ElectricLime);
+    }
+    @media screen and (max-width: 576px) {
+      @include estiloTexto(35px, $ElectricLime);
     }
   }
-  
+}
+
 // Tienda
 
-.aside_tienda{
+.aside_tienda {
   margin-left: 20px;
 }
 
-  // Novedades
-  
-  .main_novedades {
-    img {
-      width: 20vw;
-      height: 200px;
-      @media screen and (max-width: 768px) {
-        width: 40vw;      
-      }
-      @media screen and (max-width: 576px) {
-        width: 80vw;      
-      }
+// Novedades
+
+.main_novedades {
+  img {
+    width: 20vw;
+    height: 200px;
+    @media screen and (max-width: 768px) {
+      width: 40vw;
     }
-    .noticia {
-      overflow: scroll;
-      background-color: $verde3;
-      margin: 10px auto 10px;
-      height: 250px;
-      width: 93vw;
+    @media screen and (max-width: 576px) {
+      width: 80vw;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.3s;
     }
   }
-  
-  // Nosotros
-  
-    .nosotrosTexto {
-      @include estiloTexto2 (20px, white);
+  .noticia {
+    @include estiloTexto2(20px, white);
     height: fit-content;
     margin: 20px;
     position: relative;
-    p{
-    position: relative;
-  }
+    p {
+      position: relative;
     }
-    .nosotrosTexto::before{
+  }
+  .noticia::before {
     content: "";
-    background-image: url('../img/nosotros.jpg');
+    background-image: url("../img/novedades.jpg");
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -54,16 +53,39 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.3;
   }
-  
-  
-  
-  // Contacto
-  
-    .contactForm {
-      margin: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+}
+
+// Nosotros
+
+.nosotrosTexto {
+  @include estiloTexto2(20px, white);
+  height: fit-content;
+  margin: 20px;
+  position: relative;
+  p {
+    position: relative;
+  }
+}
+.nosotrosTexto::before {
+  content: "";
+  background-image: url("../img/nosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+// Contacto
+
+.contactForm {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
