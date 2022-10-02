@@ -18,8 +18,8 @@
   margin: 0; }
 
 .header img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   object-fit: cover; }
 
 .dropdown:hover .dropdown-menu {
@@ -45,7 +45,7 @@
       color: #ccff33; } }
 
 .aside_tienda {
-  margin-left: 20px; }
+  margin-left: 10px; }
 
 .main_novedades img {
   width: 20vw;
@@ -164,10 +164,10 @@
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Work Sans", sans-serif;
   font-style: italic;
-  color: #9ef01a; }
+  color: white; }
   .navbar .logo {
     padding-left: 50px; }
   .navbar form {

@@ -1,7 +1,7 @@
 .navbar{
     padding-top: 20px;
     padding-bottom: 20px;
-    @include estiloTexto2(20px, $GreenLizard);
+    @include estiloTexto2(18px, white);
     .logo{
         padding-left: 50px;
     }
