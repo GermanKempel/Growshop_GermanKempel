@@ -1,6 +1,6 @@
 .card {
     height: 300px;
-    width: 18vw;
+    width: 20vw;
     background-color: $SheenGreen;
     transition: transform 0.2s ease;
     box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
@@ -8,7 +8,7 @@
     text-align: center;
     border-color: $ElectricLime;
     border-width: 2px;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       width: 40vw;      
     }
     @media screen and (max-width: 576px) {
@@ -19,7 +19,8 @@
     }
     img {
       height: 70%;
-      object-fit: fill;
+      object-fit: contain;
+      background-color: white;
     }
     .card-body{
       height: 30%;

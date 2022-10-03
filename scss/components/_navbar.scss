@@ -1,12 +1,9 @@
 .navbar{
     padding-top: 20px;
     padding-bottom: 20px;
-    @include estiloTexto2(18px, white);
+    @include estiloTexto2(22px, white);
     .logo{
         padding-left: 50px;
-    }
-    form{
-        padding-right: 50px;
     }
     .navbar-toggler{
         margin-right: 50px;
