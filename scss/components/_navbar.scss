@@ -8,4 +8,19 @@
     .navbar-toggler{
         margin-right: 50px;
     }
+    #section-carrito{
+        height: 60px;
+        margin: 5px;
+        padding: 3px;
+        display: flex;
+        flex-direction: wrap;
+        background-color: $AoEnglish;
+        border-radius: 10px;
+    }
+    #section-carrito img{
+        height: 48px;
+        width: 60px;
+        margin: 3px;
+        object-fit: fill;
+    }
 }

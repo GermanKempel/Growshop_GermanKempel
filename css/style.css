@@ -167,3 +167,16 @@
     padding-left: 50px; }
   .navbar .navbar-toggler {
     margin-right: 50px; }
+  .navbar #section-carrito {
+    height: 60px;
+    margin: 5px;
+    padding: 3px;
+    display: flex;
+    flex-direction: wrap;
+    background-color: #008000;
+    border-radius: 10px; }
+  .navbar #section-carrito img {
+    height: 48px;
+    width: 60px;
+    margin: 3px;
+    object-fit: fill; }
