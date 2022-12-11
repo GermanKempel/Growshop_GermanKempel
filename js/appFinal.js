@@ -100,7 +100,7 @@ const cargaproductos = async () => {
 
     dataproductos.forEach((producto) => {
         const div = document.createElement("div");
-        div.setAttribute("class", "card-producto", "producto" );
+        div.setAttribute("class", "card-producto");
         div.innerHTML = `<div class="col d-flex justify-content-center">
                                 <div class="card w-80">
                                   <img src="${producto.img}" class="card-img-top" alt="${producto.nombre}">
