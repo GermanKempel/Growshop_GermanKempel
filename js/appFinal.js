@@ -96,11 +96,11 @@ botonVaciar.addEventListener('click', () => {
 const cargaproductos = async () => {
     const resp = await
         fetch("/js/productos.json")
-    dataproductos = await resp.json()
+      dataproductos = await resp.json()
 
     dataproductos.forEach((producto) => {
         const div = document.createElement("div");
-        div.setAttribute("class", "card-producto");
+        div.setAttribute("class", "card-producto", "producto" );
         div.innerHTML = `<div class="col d-flex justify-content-center">
                                 <div class="card w-80">
                                   <img src="${producto.img}" class="card-img-top" alt="${producto.nombre}">
@@ -114,9 +114,7 @@ const cargaproductos = async () => {
         const boton = document.getElementById(`btn${producto.id}`)
 
         boton.addEventListener('click', () => {
-
             agregarAlCarrito(producto.id)
-
         })
     })
 }
