@@ -1,0 +1,8 @@
+[
+    {"id":1, "nombre":"Afghan Pearl", "cantidad": 1,  "precio": 15, "img": "../img/seeds.jpg" },
+    {"id":2, "nombre":"Joystick PS4", "cantidad": 1,  "precio": 25, "img": "../img/joystick.jpg" },
+    {"id":3, "nombre":"Bong", "cantidad": 1,  "precio": 10, "img": "../img/bong.jpg" },
+    {"id":4, "nombre":"Pipa", "cantidad": 1,  "precio": 5, "img": "../img/pipa.jpg" },
+    {"id":5, "nombre":"Led FS 50w", "cantidad": 1,  "precio": 50, "img": "../img/luzLed.jpg" },
+    {"id":6, "nombre":"Remera KFC", "cantidad": 1,  "precio": 12, "img": "../img/remera.jpg" }
+]
